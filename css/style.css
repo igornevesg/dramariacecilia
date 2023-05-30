@@ -4475,7 +4475,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu { display: block; }
 
 .social-icons li { float: left; list-style: none; }
 
-.social-icons li a { float: left; height: 32px; width: 32px; line-height: 32px; font-size: 16px; text-align: center; margin: 0 4px 4px 0; border-radius: 4px; border: 0; background: transparent; color: #333; overflow: hidden; -webkit-transition: all .3s ease; transition: all .3s ease; }
+.social-icons li a { float: left; height: 32px; width: 32px; line-height: 32px; font-size: 16px; text-align: center !important; margin: 0 4px 4px 0; border-radius: 4px; border: 0; background: transparent; color: #333; overflow: hidden; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
 .dark .social-icons li a { color: #fff; }
 
@@ -6756,7 +6756,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
-	text-align:center;
+	text-align:center !important;
        font-size:30px;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
@@ -6846,8 +6846,18 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   .diminuir-tamanho {
     margin-top: 0px;
   }
-  .eletro {
-    font-size: 3em !important;
+  .inspiro-slider .slide .slide-captions h1 {
+    margin-bottom: -15px !important;    
+  }
+  .flickity-page-dots {
+    display: none;
+  }
+  
+  .social-icons ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 845px;
   }
 
 }
@@ -6892,4 +6902,68 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   .video-margin {
     margin-top: -80px;
   }
+}
+
+@media (max-width:767px) {
+  #header .header-inner #logo a {
+    float: left;
+    margin-left: 10px;
+  }
+  .call-to-action h3 {
+    text-align: center !important;
+  }
+  .call-to-action .col-lg-5 {
+    text-align: center !important;
+  }
+  .centro {
+    text-align: center !important;
+  }
+  .widget, .widget p {
+    text-align: center !important;
+  }
+
+  .padding-top {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width:374px) {
+  .social-icons ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 905px;
+  }
+}
+@media (max-width:339px) {
+  .social-icons ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1000px;
+  }
+}
+
+p, a, span, h4 {
+  text-align: justify !important;
+}
+
+.texto-banner-margem {
+  text-align: center !important;
+}
+
+.testimonial .testimonial-item > span {
+  text-align: center !important;
+}
+
+.inspiro-slider .slide .slide-captions h1 {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.client-logos .flickity-page-dots {
+  display: none;
 }
