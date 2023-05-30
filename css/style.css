@@ -6967,3 +6967,7 @@ p, a, span, h4 {
 .client-logos .flickity-page-dots {
   display: none;
 }
+
+#topbar.dark.topbar-transparent {
+  border-bottom: none !important;
+}
